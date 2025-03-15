@@ -36,9 +36,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 136);
+            button1.Location = new Point(17, 227);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(166, 47);
+            button1.Size = new Size(237, 78);
             button1.TabIndex = 0;
             button1.Text = "Komputer";
             button1.UseVisualStyleBackColor = true;
@@ -46,41 +47,46 @@
             // 
             // button2
             // 
-            button2.Location = new Point(203, 136);
+            button2.Location = new Point(290, 227);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(166, 47);
+            button2.Size = new Size(237, 78);
             button2.TabIndex = 1;
             button2.Text = "Monitor";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(415, 138);
+            richTextBox1.Location = new Point(593, 230);
+            richTextBox1.Margin = new Padding(4, 5, 4, 5);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(114, 45);
+            richTextBox1.Size = new Size(161, 72);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(451, 120);
+            label1.Location = new Point(644, 200);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(45, 15);
+            label1.Size = new Size(69, 25);
             label1.TabIndex = 3;
             label1.Text = "Cena zł";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(541, 485);
+            ClientSize = new Size(773, 808);
             Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Kalkulator";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

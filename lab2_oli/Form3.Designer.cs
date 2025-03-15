@@ -34,46 +34,53 @@
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // listView1
             // 
-            listView1.Location = new Point(41, 25);
+            listView1.Location = new Point(59, 42);
+            listView1.Margin = new Padding(4, 5, 4, 5);
             listView1.Name = "listView1";
-            listView1.Size = new Size(205, 233);
+            listView1.Size = new Size(291, 386);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
+            listView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(41, 310);
+            label1.Location = new Point(59, 517);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(34, 15);
+            label1.Size = new Size(51, 25);
             label1.TabIndex = 1;
             label1.Text = "Cena";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(95, 302);
+            textBox1.Location = new Point(136, 503);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(141, 31);
             textBox1.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(231, 310);
+            label2.Location = new Point(330, 517);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(15, 15);
+            label2.Size = new Size(25, 25);
             label2.TabIndex = 3;
             label2.Text = "zł";
             // 
             // button1
             // 
-            button1.Location = new Point(9, 342);
+            button1.Location = new Point(13, 570);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(84, 31);
+            button1.Size = new Size(120, 52);
             button1.TabIndex = 4;
             button1.Text = "Ok";
             button1.UseVisualStyleBackColor = true;
@@ -81,26 +88,40 @@
             // 
             // button2
             // 
-            button2.Location = new Point(197, 342);
+            button2.Location = new Point(281, 570);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(84, 31);
+            button2.Size = new Size(120, 52);
             button2.TabIndex = 5;
             button2.Text = "Anuluj";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(173, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(76, 25);
+            label3.TabIndex = 6;
+            label3.Text = "Monitor";
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(299, 395);
+            ClientSize = new Size(427, 658);
+            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(listView1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form3";
-            Text = "Form3";
+            Text = "Monitor";
+            FormClosed += Form3_FormClosed;
             Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -114,5 +135,6 @@
         private Label label2;
         private Button button1;
         private Button button2;
+        private Label label3;
     }
 }
